@@ -26,6 +26,14 @@ module.exports = {
             accounts: [PRIVATE_KEY],
         },
     },
+    gasReporter: {
+        enabled: false,
+        outputFile: "gas-report.txt",
+        noColors: true,
+        currency: "USD",
+        //coinmarketcap: COINMARKETCAP_API_KEY,
+        token: "ETH",
+    },
     solidity: "0.8.7",
     namedAccounts: {
         deployer: {
@@ -34,5 +42,8 @@ module.exports = {
         player: {
             default: 0,
         },
+    },
+    mocha: {
+        timeout: 400000,
     },
 };
