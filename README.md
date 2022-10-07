@@ -1,1 +1,1 @@
-# hardhat-lottery
+# Ethereum Raffle
